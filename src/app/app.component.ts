@@ -15,4 +15,7 @@ export class AppComponent {
     phone : '',
     mail : '',
   }
+  onsubmit(){
+    alert(JSON.stringify(this.data))
+  }
 }

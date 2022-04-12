@@ -33,7 +33,7 @@
   <router-outlet></router-outlet> -->
 
   <h1 style="text-align: center;">Angular forms</h1>
-  <form #form="ngForm" (ngSubmit) = "form.valid">
+  <form #form="ngForm" (ngSubmit) = "form.valid&&onsubmit()">
     <label>First name</label>
     <input type="text" class="form-control" name="firstname" required #firstname="ngModel" [(ngModel)]="data.firstname" >
     <label class="text-danger" *ngIf ="form.submitted&&firstname.errors">First name is required</label>
